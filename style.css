@@ -2,6 +2,8 @@
     --primary-color: #EDEDED;
     --board-color: #FEFEFE;
     --button-color: #FAFAFA;
+    --selected-color: #D3D3D3;
+    --grid-size: 750px;
 }
 
 html, body  {
@@ -65,15 +67,21 @@ button,
     cursor: pointer;
 }
 
+#draw {
+    background-color: var(--selected-color);
+}
+
 .settings div {
     font-size: 20px;
 }
 
-
 .board {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: auto;
     background-color: var(--board-color);
-    height: 750px;
-    width: 750px;
+    height: var(--grid-size);
+    width: var(--grid-size);
     border: 2px solid gray;
     border-radius: 10px;
 }
