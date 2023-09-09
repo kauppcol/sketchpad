@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #EDEDED;
+    --board-color: #FEFEFE;
+    --button-color: #FAFAFA;
+}
+
 html, body  {
     height: 100%;
     overflow: hidden;
@@ -6,7 +12,7 @@ html, body  {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #EDEDED;
+    background-color: var(--primary-color);
     font-family: 'Roboto';
 }
 
@@ -36,7 +42,7 @@ body {
 #color-picker {
     width: 125px;
     height: 125px;
-    background-color: #EDEDED;
+    background-color: var(--primary-color);
     padding: 0;
     border: none;
 }
@@ -49,7 +55,7 @@ body {
 
 button,
 #slider {
-    background-color: #FAFAFA;
+    background-color: var(--button-color);
     font-size: 20px;
     box-sizing: border-box;
     width: 150px;
@@ -65,7 +71,7 @@ button,
 
 
 .board {
-    background-color: #FEFEFE;
+    background-color: var(--board-color);
     height: 750px;
     width: 750px;
     border: 2px solid gray;
