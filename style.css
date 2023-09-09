@@ -1,0 +1,93 @@
+html, body  {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEDED;
+    font-family: 'Roboto';
+}
+
+.title {
+    margin-top: 20px;
+    height: 80px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#color-picker {
+    width: 125px;
+    height: 125px;
+    background-color: #EDEDED;
+    padding: 0;
+    border: none;
+}
+
+#color-picker::-webkit-color-swatch {
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+button,
+#slider {
+    background-color: #FAFAFA;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.settings div {
+    font-size: 20px;
+}
+
+
+.board {
+    background-color: #FEFEFE;
+    height: 750px;
+    width: 750px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.invisible {
+    width: 150px;
+}
+
+a {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+a img {
+    width: 20px;
+    height: 20px;
+}
