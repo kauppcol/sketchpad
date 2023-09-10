@@ -14,6 +14,7 @@ html, body  {
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: var(--primary-color);
     font-family: 'Roboto';
 }
@@ -91,6 +92,7 @@ button,
 }
 
 a {
+    width: auto;
     height: 50px;
     display: flex;
     justify-content: center;

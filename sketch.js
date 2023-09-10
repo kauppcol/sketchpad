@@ -22,7 +22,9 @@ function updateGrid() {
 // Allows box coloring/erasing on click and hover
 function setBoxListeners() {
     boxes.forEach((box) => {
-        box.addEventListener('mousedown', () => {
+        box.addEventListener('mousedown', (e) => {
+            // Prevents not-allowed cursor when dragging undraggable box
+            e.preventDefault();
             updateColor(box);
         });
     });
@@ -31,6 +33,7 @@ function setBoxListeners() {
         box.addEventListener('mouseover', (e) => {
             console.log('hover');
             if (e.buttons == 1) {
+                console.log("hover update");
                 updateColor(box);
             }
         });
