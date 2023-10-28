@@ -31,9 +31,7 @@ function setBoxListeners() {
     
     boxes.forEach((box) => {
         box.addEventListener('mouseover', (e) => {
-            console.log('hover');
             if (e.buttons == 1) {
-                console.log("hover update");
                 updateColor(box);
             }
         });
